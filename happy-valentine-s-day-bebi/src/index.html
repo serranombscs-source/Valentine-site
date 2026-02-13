@@ -1,0 +1,94 @@
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<!-- LOGIN -->
+<div class="login-container" id="loginBox">
+  <h2 class="login-title">Welcome, My Bebi 💙</h2>
+  <p class="login-subtitle">Enter our secret word</p>
+
+  <input type="password" id="passwordInput" placeholder="💙 Password">
+  <button onclick="checkPassword()">Unlock Love</button>
+
+  <p id="errorMsg"></p>
+  <div class="login-hearts">💙 💙 💙</div>
+</div>
+
+<!-- MAIN WEBSITE -->
+<div class="website" id="mainWebsite">
+
+  <!-- Background Music -->
+  <iframe id="musicFrame" width="0" height="0"
+    src="https://www.youtube.com/embed/6DLjRAiPUpM?enablejsapi=1"
+    frameborder="0"
+    allow="autoplay">
+  </iframe>
+
+  <!-- MENU -->
+  <div class="menu" id="menu">
+    <h1 class="site-title">Welcome My Love</h1>
+    <div class="divider"></div>
+
+    <div class="button-group">
+      <button class="main-btn" onclick="showSection('memories')">
+        📸 Our Memories
+      </button>
+
+      <button class="main-btn letter-btn" onclick="showSection('letter')">
+        💌 My Letter For You
+      </button>
+    </div>
+  </div>
+
+  <!-- MEMORIES -->
+  <div class="section" id="memories">
+    <h2>Our Memories 📸</h2>
+
+    <div class="gallery">
+      <div class="photo-card">
+        <img src="https://scontent.fmnl44-1.fna.fbcdn.net/v/t39.30808-6/634197326_2147661459412484_7601261551749079739_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGQuK8fkGlK82lRzdOcNk-5yJG3LN-KtNnIkbcs34q02XWPTDkX22E1YEplXzE3FS3kuAPmHuLwwbxOCBNCiRGG&_nc_ohc=3bw17plK3NkQ7kNvwHH_iUp&_nc_oc=AdmB55c63FSVa8r9hhw04E12MRynWM_Bd1X8-Vm1gZZjtXSs425_B4I0tTNDq_fAgl34CKjuXNpCEUo-dMQL1dB_&_nc_zt=23&_nc_ht=scontent.fmnl44-1.fna&_nc_gid=GbhBUz3RZy8ulqcf7WYK8Q&oh=00_AfuoofFpVYfuJm69cfmTbq5BOWyWJrGN2yBjfOhLXwEkBA&oe=69952777">
+        <p>Tagatay date 💙</p>
+      </div>
+
+      <div class="photo-card">
+        <img src="https://scontent.fmnl44-1.fna.fbcdn.net/v/t39.30808-6/632486571_2147661466079150_713597390516950169_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHJM-HNGPDcIX603sp8BRCqmEOcymgtO1uYQ5zKaC07WwS9jTySMtHdMr-uzMd8sHQ-QxsKDOl8G_fSY7Q29x1R&_nc_ohc=c_6JpHuGBeIQ7kNvwGpyNJy&_nc_oc=Adka-YXBkQuzOziEQPx47Xta2DPxg9pvXjsTBJsxsxyuaHxVW6jA-JtZp38vISMZ65bH3yCoaLAbUXvfZhMC9yui&_nc_zt=23&_nc_ht=scontent.fmnl44-1.fna&_nc_gid=R8vVdTU8FtH7Xd7IimvZ9w&oh=00_Afv4CGiBZ-Hqxu00cbTMGGagXLOEkPmKq26ZlCY59uOd4w&oe=69952B8D">
+        <p>Antipolo Date ✨</p>
+      </div>
+
+      <div class="photo-card">
+        <img src="https://scontent.fmnl44-1.fna.fbcdn.net/v/t39.30808-6/633206077_2147661496079147_624193115820187914_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeE0uiBma5X13tYO1WWBzlpcfv8SAjo3cBB-_xICOjdwEKBqPyyk69i3Ldjvhsd4IiMuDD1ce5HZEBYzpheerftH&_nc_ohc=CFL7_B4faxQQ7kNvwEKd-kQ&_nc_oc=AdlslH1dmhL7ANtDSSgQxIVqBiVBuUS_VA8bAc0Iwjck_m57_VbYHR-vpcjFzxD3BNPvYePKLa9dDbhSXn_XNm1x&_nc_zt=23&_nc_ht=scontent.fmnl44-1.fna&_nc_gid=O9Qyl0kbX2hz_Tms0GtDQg&oh=00_AfvNMDi6qDOfxsqRjw1B78PUkb-W6YXUw3SV8apX-WCA8w&oe=6995267E">
+        <p>Museum Date 💕</p>
+      </div>
+    </div>
+
+    <button class="back-btn" onclick="backToMenu()">⬅ Back</button>
+  </div>
+
+  <!-- LETTER -->
+  <div class="section" id="letter">
+    <h2>My Letter For You 💌</h2>
+
+    <div class="envelope-wrapper">
+      <div class="envelope" id="envelope" onclick="openLetter()">
+        <div class="flap"></div>
+
+        <div class="letter-content">
+          My BEBI 💙<br><br>
+          Happy Valentine's Day. I just want to say thank you for coming into my life. 
+          And thank you for putting colors into it. Thank you also for loving me the 
+          way that I truly deserve.<br><br>
+
+          Always remember that I will always have your back, okay? 
+          No matter what happens, I am here for you.<br><br>
+
+          I love you so much more than you will ever know. 💙💙💙
+        </div>
+      </div>
+    </div>
+
+    <button class="back-btn" onclick="backToMenu()">⬅ Back</button>
+  </div>
+
+</div>
+
+
+
